@@ -125,8 +125,8 @@ document.addEventListener("DOMContentLoaded", () => {
         submitBtn.disabled = true;
 
         try {
-            const API_BASE = process.env.API_BASE || "http://127.0.0.1:5000";
-            console.log(API_BASE)
+            // TODO: Replace API Base when the AWS IP Changes
+            const API_BASE = "https://3.15.173.248:5000";
             const queryParams = new URLSearchParams(payload).toString();
             const url = `${API_BASE}/get_archives?${queryParams}`;
             console.log(url);
