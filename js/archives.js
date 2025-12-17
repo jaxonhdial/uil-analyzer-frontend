@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         try {
             // TODO: Replace API Base when the AWS IP Changes
-            const API_BASE = "https://3.15.173.248:5000";
+            const API_BASE = "http://3.15.173.248:5000";
             const queryParams = new URLSearchParams(payload).toString();
             const url = `${API_BASE}/get_archives?${queryParams}`;
             console.log(url);
