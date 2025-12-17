@@ -126,6 +126,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         try {
             const API_BASE = process.env.API_BASE || "http://127.0.0.1:5000";
+            console.log(API_BASE)
             const queryParams = new URLSearchParams(payload).toString();
             const url = `${API_BASE}/get_archives?${queryParams}`;
             console.log(url);
